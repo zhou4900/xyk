@@ -1,0 +1,389 @@
+
+@charset "utf-8";
+
+/* login page css */
+body {
+	background: #e1e1e1;
+}
+
+
+header {
+  display:block;
+  width: 100%;
+  height: 106px;
+  margin: 0 auto;
+  background: #fff;
+  left: 0;
+  top: 0;
+}
+.l-content{
+  position:relative;
+	background-color:#e1e1e1;
+}
+
+#logo {
+  height: 60px;
+  width: 896px;
+  margin: 0 auto;
+}
+
+.bank, .hsbc {
+  height: 36px;
+  display: block;
+  padding-bottom: 20px;
+  background: url(../img/join/banklogo_v1.jpg) no-repeat;
+}
+.bank {
+  float: left;
+  width: 250px;
+  background-position: 0 0px;
+}
+.hsbc {
+  float: right;
+  width: 150px;
+  background-position: right 0px;
+}
+#header-bar {
+  width: 100%;
+  height: 46px;
+  overflow: hidden;
+  display: block;
+  background: url(../img/join/navbg.gif);
+}
+.header-bar-inner {
+  width: 896px;
+  height: 46px;
+  margin: 0 auto;
+}
+.header-tool {
+  display: inline-block;
+  float: left;
+}
+#header-bar .home, #header-bar .goback {
+  width: 33px;
+  height: 46px;
+  display: inline-block;
+  overflow: hidden;
+  background: url(../img/join/header-bar.png) no-repeat;
+  background-position: 0 0;
+}
+#header-bar .home {
+  background-position: 0 7px;
+  width: 34px;
+}
+#header-bar .goback {
+  background-position: -40px 7px;
+  width: 90px;
+}
+.header-title {
+  color: #fff;
+  font-size: 20px;
+  width: 244px;
+  height: 46px;
+  line-height: 46px;
+  display: inline-block;
+  float: left;
+  overflow: hidden;
+  margin-left: 30px;
+}
+#header-bar .link {
+  float: right;
+  display: inline-block;
+}
+.link, .link:hover {
+  text-decoration: underline;
+  line-height: 1.8em;
+}
+#header-bar .link ul li {
+  float: left;
+  margin-left: 15px;
+  padding-left: 15px;
+  background: url(../img/join/list-icon.png) 0 center no-repeat;
+}
+ul, ol, li {
+  list-style: none outside none;
+}
+#header-bar .link ul li a {
+  line-height: 46px;
+  font-size: 14px;
+  color: #fff;
+  text-decoration:none;
+}
+
+
+/*.l-header {
+	background: url(../../img/login/header-bg.jpg) repeat-x center center;
+	background-size: 100% 100%;
+}
+
+.l-header img {
+	margin: 0 auto;
+	display: block;
+	position: relative;
+	width: 100%;
+}*/
+
+.content {
+	max-width: 898px !important;
+	background: #e1e1e1;
+}
+
+.l-content {
+	background: #e1e1e1 !important;
+}
+.notes {
+	display: block;
+	position: relative;
+	margin: 1em 14.532293986637%;
+  margin-bottom:0px;
+}
+.pctoplayer {
+	width: 570px
+}
+
+.l-content .feature {
+	position: relative;
+	display: block;
+	margin: 0 14.532293986637%  0.5em !important;
+	/* padding-bottom: 63.58574610245%; */
+	background-color: white;
+	background-size: 100% 100%;
+}
+
+
+#tabMobileEmail {
+	height: 100%;
+}
+#tabCardNo {
+	height: 100%;
+}
+
+#tabMobileEmail .ct {
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	padding: 1.125em 0;
+	border: solid #e1e1e1;   
+	border-width: 0 1px 0 0;
+}
+#tabCardNo .ct {
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	padding: 1.125em 0;
+	border: solid #e1e1e1;   
+	border-width: 0 0 0 1px;
+}
+
+
+.l-content .feature .tab-header .ct p {
+	font-size: 1.125em;
+	text-align: center;
+	margin: 0;
+	line-height: 1em;
+	height: 1em;
+}
+
+.l-content .feature .tab-header .ct p:hover {
+	cursor: pointer;
+}
+
+.l-content .feature .tab-body form {
+	margin: 1em 2em;
+}
+
+.tab-body .tab-body-inactive {
+	display: none;
+}
+
+
+.pure-form input[type="text"],
+.pure-form input[type="password"],
+.pure-form input[type="email"],
+.pure-form input[type="url"],
+.pure-form input[type="date"],
+.pure-form input[type="month"],
+.pure-form input[type="time"],
+.pure-form input[type="datetime"],
+.pure-form input[type="datetime-local"],
+.pure-form input[type="week"],
+.pure-form input[type="number"],
+.pure-form input[type="search"],
+.pure-form input[type="tel"],
+.pure-form input[type="color"],
+.pure-form select,
+.pure-form textarea {
+	width: 55%;
+	background-color: #e1e1e1;
+}
+.pure-form input:not([type]) {
+	width: 55%;
+	background-color: #e1e1e1;
+}
+
+.tab-body .pure-control-group label {
+	font-size: 1.125em;
+}
+
+
+
+.input-label {
+	display: inline-block;
+	width: 55%;
+	margin: 0 auto;
+	padding: 0;
+	text-align: right;
+}
+
+#terms {
+	padding-left: 1.5em;
+}
+
+#terms > span {
+	font-size: 0.88888889em;
+	white-space: nowrap;
+}
+
+#forgetPassword {
+	color: #fc7e22;
+	margin-left: -1.5em;
+	display: inline-block;
+}
+
+#forgetPasswordWrapper {
+	margin-left: -1.5em;
+}
+
+.form-buttons .input-label {
+  text-align: left;
+}
+
+.form-buttons .input-label button {
+	font-size: 1.125em;
+	width: 100%;
+	border: solid #fc7e22;
+	border-width: 2px;
+	margin-right: 0.625em;
+}
+
+.dynamicCode *{
+  vertical-align:middle;
+}
+.dynamicCode img{
+  margin-left:10px;
+}
+.dynamicCode a{
+  margin-left:10px;
+}
+
+.loginBtn {
+	background: #fc7e22;
+}
+.buyBtn {
+	background: white;
+	color: #fc7e22;
+	margin-right: 0;
+  border:1px solid  #fc7e22;
+}
+
+#register1 {
+	background: white;
+	color: #fc7e22;
+	margin-right: 0;
+  border:1px solid  #fc7e22;
+}
+#register2 {
+	background: white;
+	color: #fc7e22;
+	margin-right: 0;
+  border:1px solid  #fc7e22;
+}
+
+
+
+.online-cs {
+	display: block;
+	position: absolute;
+	top: 0;
+	right: -2.125em;
+	width: 1.9375em;
+	height: 7.25em;
+	background: url(../img/login/cs.png) no-repeat top center;
+	background-size: 100% 100%;
+}
+
+.online-cs:hover {
+	cursor: pointer;
+}
+/* what is maidanba layer */
+.loginPlaceholder{
+  height:100px;
+}
+/* checkbox */
+#tabMobileEmailForm .checkbox{
+  background: url(../img/join/checkbox.png) 0 -32px no-repeat;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  vertical-align: middle;
+  margin-right: 0px;
+  margin-right:4px;
+}
+#tabMobileEmailForm .checked {
+  background: url(../img/join/checkbox.png) no-repeat;
+}
+
+#tabCardNoForm .checkbox{
+  background: url(../img/join/checkbox.png) 0 -32px no-repeat;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  vertical-align: middle;
+  margin-right: 0px;
+  margin-right:4px;
+}
+#tabCardNoForm .checked {
+  background: url(../img/join/checkbox.png) no-repeat;
+}
+/* terms style overwrite */
+#terms {
+	color: black;
+}
+#tabCardNoForm .errTitle,#tabMobileEmailForm .errTitle{
+	padding-left: 17em;
+}
+
+.Validform_checktip.Validform_wrong.errTitle{
+    /*margin: 0px 4em 1em 0px;*/
+}
+/*20150712 lxm*/
+footer .icp_l {
+	float: left;
+	width: 50%;
+	padding-top:6px;
+}
+
+footer .icp_r {
+	float: right;
+	width: 50%;
+	line-height: 10px;
+	text-align: right;
+	padding-top:6px;
+}
+footer .icp_r p {
+	color: #fff;
+	margin: 6px 0 0 0;
+	padding-right: 4px;
+	font-size:12px;
+        line-height:15px;
+}
+footer .icp_l p { background: url("../pccc-icp.png") no-repeat scroll 0 0  transparent; color: #FFFFFF; height: 33px; line-height: 33px; margin: 3px 0 0 4px; padding-left: 38px; }
+footer { width: 100%; height: 60px; font-size: 12px; background:#000000; opacity:0.5; filter:alpha(opacity=50);position: fixed; left: 0; bottom: 0; }
+.qrcod {
+	position: absolute;
+    right: -60px;
+    z-index: 2;
+    top: -20px;
+    width: 130px;
+    height:130px;
+}

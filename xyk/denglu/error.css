@@ -1,0 +1,38 @@
+﻿@charset "utf-8";
+.error-info{
+	height: 591px;
+  text-align:center;
+  background-color:#FFF;
+  padding:50px 0px;box-sizing: border-box;
+}
+
+.error-info>img{
+	padding: 15px 0px;
+}
+.error-info *{
+  font-size:1.125em;
+}
+.error-info-content{
+	padding:0px 20px;
+}
+.error-info-content h4{
+	margin: 10px;
+  margin-left:0px;
+  font-weight:bold;
+}
+.error-info .btn{
+ 
+  color: white;line-height: 40px;
+	font-size:0.8em;display: inline-block;
+	background:url('../img/btn-bg-2.png');height: 40px;
+	width: 130px;text-decoration: none;
+  text-align:center;
+   margin:auto;
+   margin-top:15px;
+  display:block;
+}
+
+.error-info-2{
+  text-align:left;
+  height:610px;
+}

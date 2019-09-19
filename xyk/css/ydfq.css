@@ -1,0 +1,50 @@
+*{margin: 0;
+    padding: 0;
+}
+.container{
+    max-width:1520px!important;
+    min-width:1520px!important;
+}
+a{
+    text-decoration:none;
+    color: #191919;
+    cursor:pointer;
+}
+a:hover{
+    text-decoration:none;
+    color: #191919;
+    cursor:pointer;
+}
+.fgx{
+    width: 2px;
+    position: absolute;
+    top:80px;
+    left: 50%;
+    margin-left: -1px;
+}
+.fgx>img{
+    height: 80px;
+}
+.app-box{
+    width:50%;
+    padding: 0 5%;
+    float: left;
+    text-align: center;
+}
+.app-box h2{
+    font-size:24px;
+    padding:60px 0;
+}
+.app-box>h2>a>img{
+    width: 40px;
+    display: inline-block;
+    margin-right: 20px;
+    vertical-align: bottom;
+}
+.app-box div{
+    padding: 20px 0;
+}
+.app-box div img{
+    width: 100%;
+    display: block;
+}

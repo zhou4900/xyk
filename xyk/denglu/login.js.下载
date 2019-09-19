@@ -1,0 +1,52 @@
+$(function(){
+	$(".tab-item").click(function(e){
+		reMoveAllErrorMsg();
+		if(!$(this).hasClass("tab-item-active")){
+			var sel = $(this).index();
+
+			$.each($('.tab-header-ct').children(), function(index, obj){
+				var formId = "#" + $(obj).attr("id") + "Form"; 
+				if(formId=="#tabMobileEmailForm"){
+					$("#_softkey_div").hide();
+				}
+				if(index == sel){
+					$(obj).addClass("tab-item-active");
+					$(formId).removeClass("tab-body-inactive");
+					$('.accept').val(1);
+					$('.checkbox').addClass('checked');
+						return;
+					};
+
+				$(obj).removeClass("tab-item-active");
+				$(formId).addClass("tab-body-inactive");
+
+			});
+		}	
+	});
+  
+  $('.checkbox.c1').bind('click',function(){
+    if($('.accept.c1').val()==0){
+      $('.accept.c1').val(1);
+      $('.checkbox.c1').addClass('checked');
+    }else{
+      $('.checkbox.c1').removeClass('checked');
+      $('.accept.c1').val(0);
+    }
+  });
+  
+  $('.checkbox.c2').bind('click',function(){
+	    if($('.accept.c2').val()==0){
+	      $('.accept.c2').val(1);
+	      $('.checkbox.c2').addClass('checked');
+	    }else{
+	      $('.checkbox.c2').removeClass('checked');
+	      $('.accept.c2').val(0);
+	    }
+	  });
+  function reMoveAllErrorMsg(){
+	   $(".Validform_checktip").html("");
+	   $(".errormsg").remove();
+	   $('input').removeClass("Validform_error");
+  }
+ 
+});

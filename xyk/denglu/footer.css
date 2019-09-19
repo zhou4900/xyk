@@ -1,0 +1,10 @@
+/*é¡µè„šå®šä¹‰*/
+footer { width: 100%; height: 60px; font-size: 12px; /*background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0; */background:#000000; opacity:0.5; filter:alpha(opacity=50);position: fixed; left: 0; bottom: 0; }
+/*ÐÞ¸ÄÓÚ  20150708*/
+/* #footer { width: 896px; margin: 0 auto; font-size: 12px; } */
+#footer { width: 896px; margin: 0 auto; font-size: 12px; padding:10px 0 0 0;}
+footer .icp_l { float: left; width: 50%; }
+footer .icp_r { float: right; width: 50%; line-height: 10px; text-align: right; }
+footer .icp_l p { background: url("../footer/pccc-icp.png") no-repeat scroll 0 0  transparent; color: #FFFFFF; height: 33px; line-height: 33px; margin: 3px 0 0 4px; padding-left: 38px; }
+footer .icp_r p { color: #fff; margin: 6px 0 0 0; padding-right: 4px; line-height: 33px; }
+footer .icp_r span { color: #fff; font-size: 14px; font-weight: bold; }

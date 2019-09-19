@@ -1,0 +1,57 @@
+@charset "utf-8";
+.width100 { width:100%; }
+.width100 img { max-width:100%;    display: block;  margin: 0 auto; }
+.instalment_banner { width:100%;  }
+.instalment_banner img { width:100%; margin:0 auto; display:block;}
+.yewu { margin-top:20px; }
+.yewu li { list-style:none; width:25%; float:left; text-align:center; }
+.yewu li h3 { padding:20px 0 6px; }
+.yewu li p { color:#7f7f7f; }
+.yewu li img { width:70%; margin:0 auto; }
+
+.tese { margin-top:20px; }
+.tese li { list-style:none; width:21%; float:left; margin-right:5.3333%; text-align:center; }
+.tese li.last { margin-right:0; }
+.tese li h3 { padding:20px 0 6px; }
+.tese li p { color:#7f7f7f; }
+.tese li img { width:100%; margin:0 auto; }
+
+.tesenew { margin-top:20px; }
+.tesenew li { list-style:none; width:47.4%; margin: 0 auto; text-align:center; }
+
+.youhui { margin-top:20px; }
+.youhui li { list-style:none; width:47%; float:left; margin-right:6%; text-align:center; background:url(../images/instalment/youhui_bg.jpg) right center no-repeat; height:200px; }
+.youhui li.last { margin-right:0; }
+.youhui li h3 { padding:20px 0 6px; }
+.youhui li dl { height:100%; }
+.youhui li dl dt,.youhui li dl dd { float:left; padding:0; margin:0; }
+.youhui li dl dt { height:100%; }
+.youhui li dl dd { text-align:center; padding:0; padding-top:55px; padding-left:40px; }
+.youhui li dl dt img { height:100%; width:auto; }
+
+.xfjf-content li { list-style:none; float:left; width:22%; margin-right:4%; margin-top:20px; }
+.xfjf-content li.last { margin-right:0; }
+
+.xfjf-btn { margin:50px auto 0; width:40%; }
+.xfjf-btn .btn1 { display:inline-block; font-size:18px; color:#fff; width:45%; text-align:center; background:#5f99ee; height:40px; line-height:40px; border-radius:40px; behavior:url(/etc/designs/pccc_v2/resource/clientlibs/pc/css/PIE.htc); }
+.xfjf-btn .btn2 { display:inline-block;  font-size:18px; color:#5f99ee; margin-left:8%; width:45%; text-align:center; background:#fff; border:1px solid #5f99ee; box-sizing:border-box; height:40px; line-height:40px; border-radius:40px; behavior:url(/etc/designs/pccc_v2/resource/clientlibs/pc/css/PIE.htc); }
+
+.hsd-title { width:52%; margin:50px auto 20px; }
+.show_tips { outline:none; }
+.mask { display:none; background:#000; opacity:0.5; filter:alpha(opacity=50); position:fixed; width:100%; height:100%; z-index:9998; top:0; left:0; }
+.tips-content { display:none; position:fixed; z-index:9999; top:50%; left:0; right:0; margin-top:-150px; }
+.tips-content .quanyi-tips { width:30%; margin:0 auto; position:relative; }
+.tips-content .quanyi-tips img{ width:100%; }
+.tips-content .quanyi-tips .close { width:33px; height:33px; position:absolute; right:5px; top:5px; cursor:pointer; }
+
+@media screen and (max-width:1540px) {
+
+	.youhui li { height:170px; background-size:600px 170px; }
+	.youhui li dl dd { text-align:center; padding-top:40px; }
+}
+@media screen and (max-width:1140px) {
+
+	.youhui li { height:136px; background-size:480px 136px; }
+	.youhui li dl dd { text-align:center; padding-top:20px; }
+}
+

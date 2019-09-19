@@ -1,0 +1,98 @@
+#overlay {
+    width: 100%;
+    height: 222px;
+    position: fixed;
+    bottom: 0;
+    z-index: 999;
+    background-color: transparent;
+}
+
+
+.official {
+    position: absolute;
+    width: 434px;
+    left: 195px;
+    top: 80px;
+    height: 49px;
+    background: url("../img/float/official.png") no-repeat left center;
+    background-size: 100% 100%;
+	z-index:1000;
+}
+.character {
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    width: 510px;
+    height: 222px;
+    background: url("../img/float/character.png") no-repeat center;
+    background-size: 100% 100%;
+	
+    z-index: 990;
+}
+.character p {
+    position: absolute;
+    width: 85.6%;
+    left: 195px;
+    top: 130px;
+    color: #fff;
+    font-size: 26px;
+}
+#wrapper {
+    width: 100%;
+    height: 180px;
+    background-color: rgba(0,1,24,0.85);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#C8000118,endColorstr=#C8000118);
+    position: absolute;
+    bottom: 0;
+}
+
+.scan {
+    background-color: rgba(137,137,139,0.25);
+    padding: 18px 24px 12px;
+    float: right;
+    margin-right: 20px;
+}
+.first-line p{
+    display: inline-block;
+    font-size: 14px;
+    margin-right: 10px;
+    padding-left: 10px;
+    color: #fff;
+}
+.second-line {
+    position: relative;
+}
+.qrcode {
+    width: 115px;
+    height: 115px;
+    margin-top: 12px;
+}
+.download {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 25px;
+}
+.download a {
+    display: block;
+}
+.android {
+    margin-top: 5px;
+}
+.download a img {
+    width: 108px;
+    height: 40px;
+}
+.close_overlay {
+    float: right;
+    margin-right: 9%;
+    width: 2%;
+    color: #89898b;
+    margin-top: 12px;
+    cursor: pointer;
+}
+
+
+
+
+

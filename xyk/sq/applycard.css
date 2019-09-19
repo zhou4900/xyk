@@ -1,0 +1,14 @@
+@charset "utf-8";
+.line { width:2px; position:absolute; top:210px; left:50%; margin-left:-1px;}
+.line img { height:80px; }
+.applycard-box { width:40%; padding:0 5%; float:left; text-align:center; }
+.applycard-box h2 { padding:60px 0; font-size:24px; }
+.applycard-box h2 img { width:40px; display:inline-block; margin-right:20px; vertical-align:bottom; }
+.applycard-box div { padding:20px 0; }
+.applycard-box h3 { padding-top:30px; font-size:24px; }
+@media screen and (max-width:1540px) {
+	.line { width:2px; position:absolute; top:170px; left:50%; margin-left:-1px;}
+}
+@media screen and (max-width:1140px) {
+	.line { width:2px; position:absolute; top:170px; left:50%; margin-left:-1px;}
+}

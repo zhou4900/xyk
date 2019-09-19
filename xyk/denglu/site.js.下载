@@ -1,0 +1,101 @@
+﻿function closeLyaer(){
+  $('.layer-bg').hide();
+   unlockScreen();
+  $('.layer-bg').css('zIndex','-100');
+}
+  
+function showMdbLayer(){
+  $('#whatMDB').show();
+  lockScreen();
+  $('#whatMDB .check-layer').css('marginTop',GetTopOfCenter('.layer-bg .check-layer')+'px');
+  $('#whatMDB').css('visibility','visible');
+  $('#whatMDB').find('*').css('visibility','visible');
+  $('#whatMDB').css('z-index','100');
+
+}
+
+function showMemberLayer(){
+	  $('#whatMember').show();
+	  lockScreen();
+	  $('#whatMember .check-layer').css('marginTop',GetTopOfCenter('.layer-bg .check-layer')+'px');
+	  $('#whatMember').css('visibility','visible');
+	  $('#whatMember').find('*').css('visibility','visible');
+	  $('#whatMember').css('zIndex','100');
+
+	}
+	
+function showLayer(layer){
+	if(layer=='member'){
+		$("#mdb").hide();
+		$("#member").show();
+	}else{
+		
+		$("#member").hide();
+		$("#mdb").show();
+	}
+  $('.layer-bg').show();
+  $('.layer-bg').css('visibility','visible');
+  $('.layer-bg').find('*').css('visibility','visible');
+  $('.layer-bg').css('zIndex','100');
+}
+
+
+window.onload = function () {
+
+
+  $('.layer-bg').css('visibility','hidden');
+
+  $('.layer-bg').find('*').css('visibility','hidden');
+
+
+}
+
+$(function(){
+
+  $('.phone-login-close').bind('click',function(){
+    $('.phone-login-remind').hide();
+  });
+  $('.phone-login').bind('click',function(){
+    $('.phone-login-remind').show();
+  });
+  
+});
+
+function GetTopOfCenter(className){
+  var visibleHeight = document.documentElement.clientHeight;
+  var objHeight = $(className).height();
+  var resu = (visibleHeight-objHeight)/2;
+  return resu>0?resu:0;
+}
+
+function lockScreen(){
+  $('body').css('overflow','hidden');
+}
+function unlockScreen(){
+  $('body').css('overflow','auto');
+}
+
+function open_dialog(element){
+  // clear data
+  $('#'+element+' input[type=text]').val('');
+  lockScreen();
+  $('#'+element).show();
+  $('#'+element).find('.vertical-offset').css('top',GetTopOfCenter('#'+element+' .dumbBox-container')+'px');
+}
+function open_dialog_two(element){
+  // clear data
+  $('#'+element+' input[type=text]').val('');
+  lockScreen();
+  $('#'+element).show();
+  $('#'+element).find('.vertical-offset').css('top',GetTopOfCenter('#'+element+' .dumbBox')+'px');
+}
+
+$(function(){
+  $('.pager-number').click(function(){
+    $('.pager-number').removeClass('pager-current');
+    $(this).addClass('pager-current');
+  });
+});
+
+
+

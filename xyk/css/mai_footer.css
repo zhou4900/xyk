@@ -1,0 +1,25 @@
+*{
+    margin:0;
+    padding:0;
+}
+footer{
+    width:100%;
+    background:#5d96ed;
+    color: #fff;
+    text-align:center;
+    overflow: hidden;
+    display:block;
+    margin-top:100px;
+}
+footer .row  a{
+    color: #fff;
+}
+/*div.my-4{*/
+    /*width: 450px;*/
+/*}*/
+/*footer .row .col-6 a img{*/
+     /*width:17%;*/
+ /*}*/
+/*footer .row .col-6 .iv_img img{*/
+    /*width:70%;*/
+/*}*/

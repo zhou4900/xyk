@@ -1,0 +1,89 @@
+$(function(){
+  var indexLink = 'https://creditcard.bankcomm.com/content/index.html';
+  var loginLink = 'https://creditcardapp.bankcomm.com/member/member/main.html';
+  var searchLink = 'https://creditcard.bankcomm.com/content/pccc/search.html';
+
+  var headTopHTML = '<div class="head-top">'+
+                      '<div class="container">'+
+                        '<div class="logo">'+
+                          '<a href="'+indexLink+'" title="交通银行信用卡官网"><img src="/content/dam/pccc_pc/images/logo.png" alt="交通银行信用卡官网"></a>'+
+                        '</div>'+
+                        '<div class="mdblogo">'+
+                          '<a href="'+indexLink+'" title="买单吧"><img src="/content/dam/pccc_pc/images/mdblogo.png" alt="买单吧"></a>'+
+                        '</div>'+
+                        '<div class="box-r">'+
+                          '<div class="search">'+
+                            '<form id="nav-search" action="https://creditcard.bankcomm.com/content/pccc/search.html" method="get">'+
+                              '<input name="q" type="text">'+
+                              '<button class="btn-mod" td-event="2998001001">搜索</button>'+
+                            '</form>'+
+                          '</div>'+
+                          '<div class="login btn-mod"><a href="'+loginLink+'" title="登录" td-event="2998001002">登录</a></div>'+
+                        '</div>'+
+                        '<div class="clear"></div>'+
+                      '</div>'+
+                    '</div>';
+  $.ajax({
+    type: 'get',
+    url: '/content/json/menus/jcr:content.json',
+    dataType: 'json',
+    success: function(data){
+      if (data.result === 'success') {
+        var navHTML = '<nav><ul class="container">';
+        var headerHTML = '';
+        var headMenu = data.headMenu;
+        for(var i=0;i<headMenu.length;i++){
+          var l = headMenu[i].menulist.menuitem.length;
+          if (l == 0) {
+            navHTML += '<li'+ (menuCode=== headMenu[i].code ? ' class="active"' : '')+ '><a href="'+headMenu[i].link+'" title="'+headMenu[i].menulist.menu+'" td-event="'+ headMenu[i].tdId +','+ headMenu[i].menulist.menu +'">'+headMenu[i].menulist.menu+'</a></li>'
+          }else{
+            navHTML += '<li'+ (menuCode=== headMenu[i].code ? ' class="active"' : '')+ '>'+
+                          '<a href="'+headMenu[i].link+'" title="'+headMenu[i].menulist.menu+'" td-event="'+ headMenu[i].tdId +','+ headMenu[i].menulist.menu +'">'+headMenu[i].menulist.menu+'</a>'+
+                            '<div class="sub-nav">'+
+                              '<div class="bg1">'+
+                                '<ul>';
+            for(var j=0;j<headMenu[i].menulist.menuitem.length;j++){
+              navHTML += '<li><a href="'+headMenu[i].menulist.menuitem[j].href+'" title="'+headMenu[i].menulist.menuitem[j].text+'" td-event="'+headMenu[i].menulist.menuitem[j].tdId+','+ headMenu[i].menulist.menuitem[j].text +'">'+headMenu[i].menulist.menuitem[j].text+'</a></li>';                           
+            }
+            navHTML += '</ul>'+
+                        '<div class="clear"></div>'+
+                      '</div>'+
+                      '<div class="bg2"></div>'+
+                    '</div>'+
+                  '</li>';
+          }
+        }
+        headerHTML += headTopHTML + navHTML + '</ul><div class="clear"></div></nav>';
+        $('header').append(headerHTML);
+      }
+    }
+  })
+
+  var talkLink = 'https://creditcard.bankcomm.com/webchat/talk.do?channelType=41';
+  var mapLink = 'https://creditcard.bankcomm.com/content/dam/pc/new/wzdt/map.html';
+  var footerHTML = '<div class="pt-link">'+
+                      '<a href="'+talkLink+'" rel="nofollow" target="_blank" title="在线客服" td-event="2998001025">在线客服</a>'+
+                      '<a href="'+mapLink+'" rel="nofollow" title="网站地图" td-event="2998001026">网站地图</a>'+
+                    '</div>'+
+                    '<div class="pt-copyright"><a href="javascript:void(0);">沪ICP备05036189</a><span>©2013-2014交通银行版权所有</span><span>未经许可不得转载</span></div>'+
+                    '<div class="pt-mob"><span>服务热线：400-800-9888</span><span>服务监督热线：021-28283999</span></div>';
+  $('footer').append(footerHTML);
+  
+  //百度统计代码
+  var _hmt = _hmt || [];
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?bccfa888e611174fd7f66864fc8386d2";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+  
+  //footer固定在页面底部
+  if ($(window).height() > $('body').height())
+  {
+    $("footer").css({'width':'100%','position':'absolute','bottom':0,'left':0});
+  }else{
+    $("footer").css({'width':'100%','position':'relative'});
+  }
+
+})

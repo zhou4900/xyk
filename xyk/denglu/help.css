@@ -1,0 +1,10 @@
+.InputErr{
+	border: 1px solid red !important;
+}
+.errTitleWrapper{
+	display:none;
+}
+.errTitle{
+	font-size: 0.75em;
+  color: red;
+}
